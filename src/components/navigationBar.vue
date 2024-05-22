@@ -4,64 +4,12 @@
       <nav class="menu">
         <ul id="navbarmenu">
           <li><a>METEOROPATHIC</a></li>
-          <button @click="openPopupSignIn">Sign In</button>
-          
-          <!--popup signin-->
-          <div v-if="showPopupSignIn" class="popup-overlay">
-            <div class="popup-content">
-              <signin></signin>
-              <span class="close" @click="closePopupSignIn">&times;</span>
-            </div>
-          </div>
-          <!--end popup signin-->
-          
-          <button @click="openPopupLogIn">Log In</button>
-          <!--popup login-->
-          <div v-if="showPopupLogIn" class="popup-overlay">
-            <div class="popup-content">
-              <login></login>
-              <span class="close" @click="closePopupLogIn">&times;</span>
-            </div>
-          </div>
-          <!--end popup login-->
-
+         
         </ul>
       </nav>
     </div>
   </header>
 </template>
-
-<script>
-import Signin from "./signin-component.vue";
-import Login from "./login-component.vue";
-
-export default {
-  components: {
-    Signin,
-    Login,
-  },
-  data(){
-    return{
-      showPopupSignIn: false, //quando apro pagina il popup deve essere chiuso
-      showPopupLogIn: false
-    };
-  },
-  methods: {
-    openPopupSignIn(){
-      this.showPopupSignIn = true;
-    },
-    closePopupSignIn(){
-      this.showPopupSignIn = false;
-    },
-    openPopupLogIn(){
-      this.showPopupLogIn = true;
-    },
-    closePopupLogIn(){
-      this.showPopupLogIn = false;
-    },
-  }
-};
-</script>
 
 
 <style>
