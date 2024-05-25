@@ -71,25 +71,4 @@
   };
   </script>
 
-  <style>
-  form {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    font-family: 'Work Sans', sans-serif;
-  }
-  #city{
-    border-radius: 25px;
-    padding: 10px;
-    font-family: 'Work Sans', sans-serif;
-    border: 1px solid 
-  }
-  #search {
-    border-radius: 25px;
-    padding: 10px;
-    margin-left: 10px;
-    font-family: 'Work Sans', sans-serif;
-  }
-  </style>
-  ```
   
